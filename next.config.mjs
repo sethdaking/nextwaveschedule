@@ -4,14 +4,7 @@ const nextConfig = {
     // Ignore TypeScript build errors
     ignoreBuildErrors: true,
   },
-  extends: [
-    'next', // or your base ESLint configuration
-    'next/core-web-vitals',
-  ],
-  rules: {
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
-  },
+  
   images: {
     remotePatterns: [
       { hostname: "avatar.vercel.sh", port: "", protocol: "https" },
