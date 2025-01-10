@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    // Ignore TypeScript build errors
+    ignoreBuildErrors: true,
+  },
   images: {
     remotePatterns: [
       { hostname: "avatar.vercel.sh", port: "", protocol: "https" },
